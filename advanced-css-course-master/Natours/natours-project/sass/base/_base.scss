@@ -1,0 +1,20 @@
+
+* *::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* To change box model so that border & padding are no longer added to total width and height of an element*/
+  box-sizing: inherit;
+}
+
+html {
+  /* Root font-size */
+  /* Change it to 10px to make our life easier, we now know 1rem = 10px */
+  /* This defines what 1 rem is */
+  font-size: 62.5%;
+}
+
+/* Universal font properties & project wide font defintions as they will all be inherited*/
+body {
+  box-sizing: border-box;
+}

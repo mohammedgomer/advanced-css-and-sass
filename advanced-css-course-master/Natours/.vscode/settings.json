@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.autoprefix": [
+
+    ],
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Warning"
+}
