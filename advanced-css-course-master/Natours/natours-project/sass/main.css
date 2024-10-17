@@ -215,7 +215,6 @@ body {
 .composition__photo {
   width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
@@ -235,9 +234,33 @@ body {
 }
 .composition__photo:hover {
   outline: 1.5rem solid #55c57a;
-  transform: scale(1.5);
+  transform: scale(1.5) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+}
+.composition__photo:hover .composition__photo__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
 }
 
 .row {
@@ -281,7 +304,7 @@ body {
   /* At every point the height of this eelement should be 95% of the viewport height */
   /* If we did 100 it would make it the same exact height as the viewport e.g 100% */
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(126, 213, 111, 0.8)), url(/natours-project/img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/natours-project/img/hero.jpg);
   background-size: cover;
   /*  This property ensures that what ever viewport size the image
     stays at the top of the container */
@@ -312,4 +335,14 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/natours-project/img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
 }/*# sourceMappingURL=main.css.map */
